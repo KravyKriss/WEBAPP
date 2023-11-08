@@ -1,0 +1,274 @@
+<html>
+<head>
+<link rel="stylesheet" href="style_for_Limits.css">
+<script src="script_for_Limits.js"></script>
+<link rel="shortcut icon" href="../0_Main_menu_page/images/icon.png" type="image/png">
+	<title>Лимиты.Теория</title>
+</head>
+<table id="limits">
+
+<tr class="lim_table_head">
+<td colspan="3">
+</td>
+</tr>
+
+<tr>
+
+<td class="sides">
+</td>
+
+<td id="background_for_theory">
+
+
+<div id="theory1">
+  <big id="func_header">Область определения функции</big>
+  <p id="theory_D"> — это множество всех значений аргумента (переменной X).<br>
+  Геометрически — это проекция графика функции на ось Ох. Чтобы обозначить область определения<br> некоторой функции Y, используют запись D(y).
+Для любого значения X в D(у) можно посчитать значение Y.
+</p>
+
+<p id="theory_D_2"> <br>
+Пример: <br>
+<b>Y = X + 1</b>, если <b>Х = 0</b>, то <b>Y = 1</b></p>
+<p id="theory_D_3">Попробуйте подставить Х в уравнение:<br>
+<b>Y =  <input type="number" id="X" value="0" onkeyup="rezult()"> + 1 </b><br> Y = <text id="rez">1</text>
+</p>
+
+<p id="theory_D_4">D(y) в уравнении является множество значений Х ∈ [-ထ; +ထ],<br> ведь, поставив любой Х, будет получено значение Y.
+
+</p>
+
+  <svg id="coordinate">
+<g>
+    <line x1="170" x2="170" y1="10"  y2="290" class="y_coor"></line>
+    <line x1="10" x2="340" y1="160"  y2="160" class="y_coor"></line>
+    <line x1="170" x2="180" y1="10"  y2="20" class="y_coor"></line>
+    <line x1="170" x2="160" y1="10"  y2="20" class="y_coor"></line>
+    <line x1="340" x2="330" y1="160"  y2="170" class="y_coor"></line>
+    <line x1="340" x2="330" y1="160"  y2="150" class="y_coor"></line>
+    <polyline class="graph" points="40,270 300,10"/>
+    <circle cx="170" cy="140" r="3" onmouseover="XY()" id="point"/>
+</g>
+  </svg>
+</div>
+
+<div id="theory2">
+  <p id="theory_A"><b>Исследование функции</b> — задача, заключающаяся в определении основных параметров заданной функции.<br>
+  Одним из основных параметров является предел функции — значение функции при Х, стремящемся,то есть постепенно приблищающейся, к точке, предельной для области определения функции.
+</p>
+<p id="theory_A_2">  В функции Y = X + 1 это -ထ или к +ထ.</p>
+  <p id="theory_A_3">Очень простыми словами предел — значение функции на -ထ и на +ထ.
+  Однако стоит отметить,<br> что бесконечности это не числа, и Х не может быть им равен, Х всего лишь стремится к этим значениям.
+</p>
+
+<p id="theoty_eq" class="pl_mi"> х ≠ ±ထ</p>
+<p id="theoty_not_eq" class="pl_mi"> х → ±ထ</p>
+
+<svg id="plus_minus">
+<g>
+  <line x1="170" x2="170" y1="10"  y2="290" class="y_coor"></line>
+  <line x1="10" x2="340" y1="160"  y2="160" class="y_coor"></line>
+  <line x1="170" x2="180" y1="10"  y2="20" class="y_coor"></line>
+  <line x1="170" x2="160" y1="10"  y2="20" class="y_coor"></line>
+  <line x1="340" x2="330" y1="160"  y2="170" class="y_coor"></line>
+  <line x1="340" x2="330" y1="160"  y2="150" class="y_coor"></line>
+  <polyline class="graph" points="40,270 300,10"/>
+  <text x="10" y="190" class="plus_minus_symbols">−ထ</text>
+  <text x="310" y="190" class="plus_minus_symbols">+ထ</text>
+
+</g>
+</svg>
+
+
+</div>
+
+<div id="theory3" align="left">
+  <p id="theory_E">Любой предел состоит из трёх частей,<small> рассмотрим их на примере:</small>
+  <img src="images/lim.png" id="lim_photo_example">
+  </p>
+
+<ol id="theory_E_2" >
+<li>Всем известного значка предела <i>lim</i>;</li>
+<li>Записи под значком предела, в данном случае x → 2. Запись читается «икс стремится к двум»;</li>
+<li>Функции под знаком предела, в данном случае <i>x<sup>2</sup>+2x-1</i>.</li>
+</ol>
+  <p id="theory_E_3">Сама запись  читается так: «предел функции <i>x<sup>2</sup>+2x-1</i> при икс стремящемся к двойке».</p>
+
+
+
+  <div id="slideshow-container">
+
+  <div class="parts_of_example">
+    <img src="images/example/1.png">
+    <text class="note">Шаг 1: Подставить вместо Х число, к которому он стремится</text>
+  </div>
+
+  <div class="parts_of_example">
+    <img src="images/example/2.png">
+    <text class="note">Шаг 2: Посчитать </text>
+  </div>
+
+  <div class="parts_of_example">
+    <img src="images/example/3.png">
+    <text class="note">Шаг 3: Получить ответ</text>
+  </div>
+
+  <a class="prev_pic" onclick="minusSlides(1)">❮</a>
+  <a class="next_pic" onclick="plusSlides(1)">❯</a>
+  <script>  showSlides(slideIndex); </script>
+
+  </div>
+
+<p id="theory_E_4">Первое, что нужно делать при решении -  подставлять число в икс.</p>
+
+
+</div>
+
+<div id="theory4">
+  <p id="theory_I"><big><b>Что же делать, если Х стремится к бесконечности?</b></big><br>
+    Да то же самое - подставлять.
+    Это может привести к таким ситуациям:
+    <figure id="examples_dividing_infinity">
+    <img src="images/example2/lim_ex_divide_inf.png">
+    <img src="images/example2/lim_ex_divide_inf_2.png">
+    <img src="images/example2/lim_ex_divide_inf_3.png">
+    <img src="images/example2/lim_ex_divide_inf_4.png">
+    <img src="images/example2/lim_ex_divide_inf_5.png">
+  </figure>
+  </p>
+
+  <p id="theory_I_2">Ответ во всех примерах - 0. Так как при делении на бесконечно большое число, функция будет неограничено уменьшаться, то есть приближаться к 0.</p><br>
+  <p id="theory_I_3"><big><b>Аналогично и со стремлением Х к нулю.</big></b>
+<figure id="examples_dividing_zero">
+  <img src="images/example3/lim_ex_divide_zer.png">
+  <img src="images/example3/lim_ex_divide_zer_2.png">
+  <img src="images/example3/lim_ex_divide_zer_3.png">
+</figure>
+  </p>
+
+  <p id="theory_I_4">При делении на бесконечно маленькое число, функция будет неограничено увеличиваться, приближаясь к бесконечности. </p>
+<p id="theory_I_5">При обычной подстановке
+<figure id="examples_inf_zero">
+<img src="images/example4/eq_inf.png">
+<img src="images/example4/eq_zer.png">
+</figure> </p>
+<p id="theory_I_6">ответы ထ и 0 соответственно.</p>
+</p>
+
+</div>
+
+<div id="theory5">
+
+<p id="theory_N">
+
+Бывают однако ситуации, когда функция представляет собой дробь, в числителе и знаменателе которой находятся многочлены.
+
+<img class="problem_to_inf" onclick="show_parts_solve_problem_to_inf()"  src="images/example5/1.png">
+<img class="problem_to_zero" onclick="show_parts_solve_problem_to_zero()" src="images/example6/1.png">
+
+</p>
+
+<div id="theory_N_2" align="left">
+  <ol>
+<li>Выбирать самую старшую степень Х: в данном примере она равна тройке.<img class="example_inf_parts" src="images/example5/2.png"></li>
+<li>Произвести деление. <img class="example_inf_parts" src="images/example5/3.png"> <br> Помните, что при делении степеней с одинаковыми основаниями, основание остаётся без изменений, а из показателя степени делимого вычитают показатель степени делителя.</li>
+<li>Получить ответ.<img class="example_inf_parts" src="images/example5/4.png"></li>
+</ol>
+
+</div>
+
+<div id="theory_N_3" align="left">
+
+<ol>
+  <li>Разложить числитель и знаменатель на множители. Для этого нужно решить квадратное уравнение.<img src="images/example6/2.png">&nbsp;&nbsp;<img src="images/example6/3.png">&nbsp;&nbsp;<img src="images/example6/4.png"></li>
+  <li>Использовать формулу a(x – x<sub>1</sub>)(x – x<sub>2</sub>).<img src="images/example6/5.png"></li>
+  <li>Числитель на множители разложен, а знаменатель уже является простейшим множителем.<img src="images/example6/6.png"></li>
+  <li>Сократить на (х + 1)<img src="images/example6/7.png"></li>
+  <li>Опять произвести подстановку Х, получить ответ<img src="images/example6/9.png"></li>
+
+</ol>
+
+
+
+</div>
+<p id="theory_N_4">Выберите пример, чтоб увидеть способ его решения</p>
+</div>
+<div id="theory6">
+
+ <p id="theory6_header">Несколько примеров решения пределов: <button id="show_answers" onclick="turn()">Показать ответы</button></p>
+
+<div id="theory_P_12345">
+<p id="theory_P">
+  <img class="img_ex" src="images/examples/1.png"/>
+
+  <text class="solve">Способ: подстановка Х Ответ: 28</text>
+</p>
+
+<p id="theory_P_2">
+  <img class="img_ex" src="images/examples/2.png"/>
+
+  <text class="solve">Способ: подстановка Х Ответ: 2/3</text>
+
+</p>
+
+<p id="theory_P_3">
+  <img class="img_ex" src="images/examples/3.png"/>
+
+  <text class="solve">Способ: подстановка Х Ответ: 2</text>
+</p>
+
+<p id="theory_P_4">
+  <img class="img_ex" src="images/examples/4.png">
+
+  <text class="solve">Способ: разложение на множители Ответ: 28</text>
+</p>
+
+<p id="theory_P_5">
+  <img class="img_ex" src="images/examples/5.png"/>
+
+  <text class="solve">Способ: деление на старшую степень Ответ: 1</text>
+</p>
+
+</div>
+
+
+</div>
+
+
+</td>
+
+<td class="sides">
+</td>
+</tr>
+
+<tr class="lim_table_footer">
+<td colspan="3">
+  <text id="next" class="nav" onclick="next()">→2</text>
+  <text id="previous" class="nav" onclick="prev()">Назад к меню</text>
+</td>
+</tr>
+
+</table>
+
+
+
+<table id="r_u_ready">
+
+<tr>
+
+<td colspan="2" id="q_r_u_ready" align="center">Готовы<br>к<br>тестированию?</td>
+
+
+</tr>
+
+<tr>
+
+<td align="center" id="yes" onclick="yes()"><img src="images/check1.png"></td>
+<td align="center" id="no" onclick="no()"><img src="images/cross2.png"></td>
+
+
+</tr>
+
+</table>
+
+</html>

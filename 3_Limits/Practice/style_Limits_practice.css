@@ -1,0 +1,104 @@
+table#lim_pract {
+position: absolute;
+bottom: 12px;
+right: 320px;
+width: 900px;
+height: 700px;
+border-collapse: collapse;
+background-color: #dfe7fd;
+border-radius: 15px;
+overflow:hidden;
+border: none;
+font-family: MS Sans Serif;
+
+
+}
+
+td#question {
+
+background-color: #fdfffc;
+border: 8px solid #f0f0f0;
+height: 100px;
+
+}
+
+td#reasure{
+
+  height: 220px;
+
+}
+
+div#q_1{
+
+  position: absolute;
+  left: 250px;
+  top: 80px;
+  font-size: 25px;
+  color: #C2CDEB;
+}
+
+div#first {
+
+color: #3d3b8e;
+
+}
+
+
+button {
+  font-family: MS Sans Serif;
+  height: 50px;
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+color: #3d3b8e;
+  background-color: #dfe7fd;
+  font-size: 15px;
+box-shadow: 0px 1px 10px #BFCEF7;
+}
+
+button.right{
+background-color: #fdfffc;
+border: none;
+transition-duration: 0.2s;
+cursor: pointer;
+
+}
+
+button.right:active {
+
+background-color: #a9def9;
+color: white;
+
+}
+
+button.wrong {
+  background-color: #fdfffc;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.wrong:hover {
+
+  background-color: #094074;
+  color: white;
+
+}
+
+img#sad_cat{
+  visibility: hidden;
+}
+
+a#arrow_for_next_set_of_questions{
+color: #fe9000;
+position: absolute;
+right: 20px;
+bottom: 20px;
+visibility: hidden;
+font-size: 30px;
+}
+
+a#arrow_for_next_set_of_questions:visited{
+color: #ff9f1c;
+
+}

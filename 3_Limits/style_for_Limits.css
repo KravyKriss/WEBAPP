@@ -1,0 +1,461 @@
+table#limits {
+position: absolute;
+bottom: 12px;
+right: 320px;
+width: 900px;
+height: 700px;
+border-collapse: collapse;
+background-color: #ffb8f1;
+border-radius: 15px;
+border: none;
+font-family: MS Sans Serif;
+color: DeepPink;
+text-align:center;
+}
+
+big#func_header {
+  color: DeepPink;
+  font-size: 40px;
+  position: absolute;
+  top: 50px;
+  left: 155px;
+  font-weight: bold;
+}
+
+
+p#theory_D {
+
+line-height: 2;
+position: absolute;
+top: 100px;
+left: 50px;
+line-height: 50px;
+
+}
+
+p#theory_D_2{
+  line-height: 2;
+  position: absolute;
+  right: 140px;
+  line-height: 50px;
+  top: 210px;
+
+}
+
+p#theory_D_3 {
+  position: absolute;
+  right: 100px;
+  line-height: 50px;
+  bottom: 145px;
+
+}
+
+input#X {
+
+width: 40px;
+color: red;
+font-family: MS Sans Serif;
+font-size: 14px;
+}
+
+p#theory_D_4 {
+  position: absolute;
+  right: 40px;
+  line-height: 50px;
+  bottom: 45px;
+
+}
+
+p#theory_A {
+line-height: 30px;
+position: absolute;
+top: 50px;
+right: 10px;
+
+}
+
+p#theory_A_2 {
+
+  position: absolute;
+  top: 290px;
+  right: 130px;
+
+}
+
+p#theory_A_3 {
+
+position: absolute;
+bottom: 180px;
+line-height: 30px;
+right: 70px;
+
+}
+p#theory_E{
+position: absolute;
+top: 30px;
+left: 50px;
+font-size: 20px;
+font-weight: bold;
+line-height: 1.5;
+}
+
+ol#theory_E_2 {
+
+  position: absolute;
+  top: 90px;
+  line-height: 1.5;
+}
+
+p#theory_E_3{
+
+  position: absolute;
+  top: 180px;
+  left: 50px;
+}
+
+
+div.mySlides {display: none;}
+
+div#slideshow-container {
+  border: 2px solid DeepPink;
+  position: absolute;
+  bottom: 150px;
+  left: 90px;
+}
+
+a.prev_pic, .next_pic {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  color: black;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a.next_pic {
+  right: 0;
+}
+
+text.note {
+  color: #ffafcc;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  width: 200px;
+  left: 35%;
+text-align: center;
+}
+
+p#theory_E_4
+{
+position: absolute;
+bottom: 80px;
+left: 50px;
+
+
+}
+
+p#theory_I {
+position: absolute;
+top: 15px;
+left: 120px;
+line-height: 2;
+font-size: 20px;
+}
+
+p#theory_I_2 {
+
+  position: absolute;
+  top: 240px;
+  left: 1px;
+  line-height: 2;
+}
+p#theory_I_3{
+  position: absolute;
+  top: 330px;
+  left: 260px;
+}
+p#theory_I_4 {
+  position: absolute;
+  bottom: 130px;
+  line-height: 2;
+  left: 1px;
+}
+
+p#theory_I_5 {
+position: absolute;
+bottom: 80px;
+left: 46px;
+
+}
+
+p#theory_I_6 {
+  position: absolute;
+  bottom: 71px;
+  right: 100px;
+}
+
+p#theory_N{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 90%;
+  line-height: 2;
+}
+
+div#theory_N_2 {
+
+  line-height: 2;
+  position: absolute;
+  bottom: 120px;
+  box-shadow: 0.5px 1px 30px #e4c1f9;
+  width: 855px;
+  display: none;
+}
+
+div#theory_N_3 {
+  position: absolute;
+  bottom: 80px;
+  line-height: 2;
+  box-shadow: 0.5px 1px 30px #ffa6c1;
+  width: 855px;
+  display: none;
+
+}
+
+p#theory_N_4{
+position: absolute;
+top:50%;
+right: 250px;
+font-style: italic;
+
+}
+
+p#theory6_header{
+  color: DeepPink;
+  font-size: 25px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-weight: bold;
+}
+
+
+div#theory_P_12345{
+
+position: absolute;
+bottom: 50px;
+left: 50px;
+width: 800px;
+height: 500px;
+}
+
+
+
+img.problem_to_inf{
+  position: absolute;
+  top: 80px;
+  right: 190px;
+  border-radius: 100px;
+}
+
+img.problem_to_inf:hover{
+box-shadow: 0.5px 1px 30px #e4c1f9;
+
+}
+
+img.problem_to_zero{
+  position: absolute;
+  top: 80px;
+  left: 190px;
+  border-radius: 100px;
+}
+
+img.problem_to_zero:hover{
+box-shadow: 0.5px 1px 30px #ffa6c1;
+
+}
+
+figure#examples_inf_zero {
+  position: absolute;
+  bottom: 50px;
+  left: 210px;
+}
+
+
+figure#examples_dividing_zero {
+position: absolute;
+top: 370px;
+left: 150px;
+}
+
+figure#examples_dividing_infinity{
+
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  left: -50px;
+}
+img#lim_photo_example {
+
+  position: absolute;
+  top: -10px;
+}
+
+p.pl_mi {
+color: #7c7c7c;
+font-size: 45px;
+position: absolute;
+bottom: 30px;
+}
+
+p#theoty_eq{
+left: 100px;
+}
+
+p#theoty_not_eq{
+right: 100px;
+}
+
+
+
+svg#coordinate {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+
+}
+
+
+svg#plus_minus {
+
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  top: 190px;
+  left: 45px;
+
+}
+
+text.plus_minus_symbols {
+font-size: 25px;
+
+}
+
+line.y_coor{
+  stroke: grey;
+  stroke-width: 1px;
+}
+
+polyline.graph {
+
+  fill:none;
+  stroke:red;
+  stroke-width:2.5;
+}
+
+tr.lim_table_head {
+height: 20px;
+}
+
+tr.lim_table_footer{
+  height: 60px;
+}
+
+text#next {
+position: absolute;
+left: 25px;
+bottom: 10px;
+}
+
+text#previous {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+}
+
+text.nav {
+  font-size: 23px;
+}
+
+text.nav:hover{
+text-decoration: underline;
+cursor:default;
+}
+
+text.solve {
+
+
+}
+
+button#show_answers {
+
+  height: 50px;
+  width: 200px;
+  font-family: MS Sans Serif;
+  color: white;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  background-color: #EC5BA9;
+  color: white;
+  border-radius:5px;
+  box-shadow:0 4px #B62B75;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+
+}
+
+button#show_answers:active{
+  box-shadow: none;
+  top: 6px;
+
+}
+
+
+td.sides {
+width: 20px;
+
+}
+
+td#background_for_theory {
+background-color: #fdfffc;
+}
+
+div#theory2, div#theory3, div#theory4, div#theory5, div#theory6 { /*ПОМЕНЯТЬ ОБРАТНО НА ТЕОРИЯ4*/
+ display: none;
+}
+
+
+
+table#r_u_ready {
+background-color: #a6b1e1;
+border-collapse: collapse;
+border-radius: 5px;
+width: 500px;
+height: 300px;
+z-index:1;
+position:relative;
+font-family: MS Sans Serif;
+color: white;
+font-size: 40px;
+font-weight: bold;
+letter-spacing:8px;
+display: none;
+position: absolute;
+bottom: 220px;
+right: 520px;
+
+box-shadow: 1px 2px 20px #FCFDF2;
+
+}
+
+td#q_r_u_ready {
+
+  height: 200px;
+}

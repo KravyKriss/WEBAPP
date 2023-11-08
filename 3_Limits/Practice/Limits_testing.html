@@ -1,0 +1,213 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style_for_Limits_testing.css">
+  <script src="script_for_Limits_testing.js"></script>
+  <link rel="shortcut icon" href="../../0_Main_menu_page/images/icon.png" type="image/png">
+<title>Лимиты.Тестирование</title>
+</head>
+
+<table id="lim_testing">
+<tr id="head_lim_testing">
+<td colspan="3" >
+ТЕСТИРОВАНИЕ
+</td>
+</tr>
+
+<tr>
+
+<td class="small_td_like_borders">
+
+  </td>
+
+  <td  id="lim_testing_content">
+<div id="testing_P">
+<p id="testing_P_1">
+Решите следующий предел:<br><img src="images/test_ex_1.png">
+</p>
+<p id="testing_P_2">
+Введите получившийся у вас ответ:
+<input type="text" placeholder="Вот сюда введите" id="nine">
+<button id="OK" onclick="show_rezult()" >ОК</button>
+
+<script>
+var input = document.getElementById('nine');
+input.onkeypress = function(e)
+	{
+r = /[^а-яa-z_+)()!',<>=*@#$%^&№;:?"]$/;
+	return (r.test(String.fromCharCode(e.charCode)));
+	}
+		</script>
+</p>
+<p id="testing_P_2_correct">
+Всё верно!<br>
+Метод решения: подстановка икса.<br>
+<img src="images/test_ex_1_solved.png"><br>
+<img src="images/test_ex_1_result.png">
+</p>
+<p id="testing_P_2_not_correct">
+Неверно!<br>
+Подсказка: метод подстановки икса.<br>
+<img id="not_correct_show_angry_cat"src="images/angry_cat.gif" width="125" height="125">
+</p>
+</div>
+
+<div id="testing_I">
+
+<p id="testing_I_1">
+Нужно выбрать правильный вариант ответа:<br><br>
+<img src="images/test_ex_2.png">
+</p>
+<p id="testing_I_2">
+<br>
+  <input id="radio_1" type="radio" value="0" name="choosing_answer" class="wrong">
+  <label for="radio_1">0</label>
+
+  <input id="radio_2" type="radio" value="2" name="choosing_answer" class="wrong">
+  <label for="radio_2">2</label>
+
+  <input id="radio_-3" type="radio" value="-3" name="choosing_answer" class="right">
+  <label for="radio_-3">-3</label>
+
+  <input id="radio_3" type="radio" value="3" name="choosing_answer" class="wrong">
+  <label for="radio_3">3</label><br>
+
+<input type="submit" value="Выбрать" id="choose_this" onclick="show_rezult_2()">
+
+</p>
+
+<p id="testing_I_1_correct">
+Всё верно!<br>
+Метод решения: деление на старшую степень.<br>
+Ответ: -3.
+</p>
+
+<p id="testing_I_1_not_correct">
+Неверно!<br>
+Подсказка: метод деления на старшую степень.
+</p>
+
+</div>
+
+<div id="testing_Z">
+
+  <p id="testing_Z_1">
+  Заполните пробелы:<br>
+  <img src="images/test_ex_3.png"><br>
+  <img src="images/test_ex_3_solving.png">
+
+</p>
+
+<p id="testing_Z_2">
+<input type="text" placeholder="{1}" id="four" class="fill_in">
+<input type="text" placeholder="{2}" id="minus_three" class="fill_in">
+<input type="text" placeholder="{3}" id="six" class="fill_in">
+<button id="sub_filling_in" onclick="check_filled_in()">Вот так</button>
+  </p>
+
+<p id="testing_Z_1_correct">
+
+Всё правильно!<br>
+Метод решения: Разложение на множители.<br>
+После сокращения ответ: 12.
+
+</p>
+
+<p id="testing_Z_1_not_correct">
+
+Неправильно!<br>
+Подсказка: метод разложения на множители, расчёт по формуле.
+
+</p>
+
+</div>
+
+<div id="testing_">
+
+</div>
+
+
+
+
+  <script>
+  var inputs = document.getElementsByClassName("fill_in");
+
+  for (var field of inputs){
+
+
+    field.onkeypress = function(e)
+      {
+    r = /[^а-яa-z_+)()!',<>=*@#$%^&№;:?"]$/;
+      return (r.test(String.fromCharCode(e.charCode)));
+      }
+
+
+  }
+
+
+
+  		</script>
+
+
+
+
+
+</td>
+<td class="small_td_like_borders">
+</td >
+</tr>
+
+<tr id="footer_lim_testing">
+<td colspan="3" >
+<button value="1" class="next_page_testing">1</button>
+<button value="2" class="next_page_testing">2</button>
+<button value="3" class="next_page_testing">3</button>
+<button value="Закончить" class="next_page_testing">Закончить</button>
+
+</td>
+</tr>
+
+
+
+</table>
+<script>
+
+const buttons_next = document.getElementsByClassName("next_page_testing");
+var users_answer = document.getElementById("nine");
+var flag = 0;
+
+for (let o of buttons_next){
+
+o.onclick = function() {
+flag = 1;
+
+x = o.value;
+
+if (x == "2" && OK.innerText =="✓") {
+
+testing_P.style.display = "none";
+testing_Z.style.display = "none";
+testing_I.style.display = "block";}
+
+
+if (x == "1"){}
+
+if (x == "3" && choose_this.value == "✓"){
+testing_Z.style.display = "block";
+testing_I.style.display = "none";
+  }
+
+if (x=="Закончить" && sub_filling_in.innerText == "✓"){
+
+
+  window.location.href = "Limits_yay.html";
+
+}
+
+}
+}
+
+</script>
+
+
+
+</html>
